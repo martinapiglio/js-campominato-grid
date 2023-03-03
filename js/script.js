@@ -1,9 +1,27 @@
 let containerElement = document.getElementById('container');
 let playButton = document.getElementById('play-button');
-let cellNumber = 100;
-let cellPerRow = Math.sqrt(cellNumber);
+let cellNumber;
+let cellPerRow;
 
 playButton.addEventListener('click', function() {
+
+    let difficulty = document.getElementById('difficulty-level').value;
+
+    if (difficulty == '1') {
+
+        cellNumber = 100;
+
+    } else if (difficulty == '2') {
+
+        cellNumber = 81;
+
+    } else if (difficulty == '3') {
+
+        cellNumber = 49;
+
+    };
+    
+    cellPerRow = Math.sqrt(cellNumber);    
 
     for (i = 1; i <= cellNumber; i++) {
 
