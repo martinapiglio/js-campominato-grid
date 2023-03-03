@@ -39,9 +39,23 @@ nav #play-button {
 
 /* main */
 main {
-    height: calc(100vh - 25vh); /* - nav+footer height */
     background-color: #7fffd4;
 }
+
+main #container {
+    display: flex;
+    flex-wrap: wrap;
+
+    max-width: 500px;
+    margin: auto;
+    padding: 2em 0;
+}
+
+main #container .square {
+    aspect-ratio: 1;
+    border: 1px solid black; /*TEST*/
+}
+
 /* /main */
 
 /* footer */
