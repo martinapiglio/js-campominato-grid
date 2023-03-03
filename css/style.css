@@ -3,5 +3,50 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    font-family: sans-serif;
 }
 /* /common */
+
+nav,
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 1em;
+}
+
+/* nav */
+nav {
+    height: 15vh;
+}
+
+nav #nav-left {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+nav #nav-left img {
+    height: 80%;
+}
+
+nav #play-button {
+    padding: .1em 1em;
+}
+/* /nav */
+
+/* main */
+main {
+    height: calc(100vh - 25vh); /* - nav+footer height */
+    background-color: #7fffd4;
+}
+/* /main */
+
+/* footer */
+footer {
+    height: 10vh;
+    font-size: .8em;
+}
+/* /footer */
