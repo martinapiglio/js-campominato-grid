@@ -1,15 +1,29 @@
 let containerElement = document.getElementById('container');
-let cellNumber = 100;
+let playButton = document.getElementById('play-button');
+let cellNumber = 81;
 let cellPerRow = Math.sqrt(cellNumber);
 
-console.log(cellPerRow);
+playButton.addEventListener('click', function() {
 
-for (i = 0; i < cellNumber; i++) {
+    for (i = 1; i <= cellNumber; i++) {
+
+        newElement = createSquare(i);
+        containerElement.append(newElement);
+
+    };
+
+});
+
+
+
+
+//---------function: create a square----------------
+function createSquare(squareText) {
 
     let newSquare = document.createElement('div');
-    containerElement.append(newSquare);
     newSquare.classList.add("square");
     newSquare.style.width= "calc(100% / " + cellPerRow + " )";
-    newSquare.innerText = i + 1;
+    newSquare.innerText = squareText;
 
-}
+    return newSquare;
+}   
