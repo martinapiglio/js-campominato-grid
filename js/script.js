@@ -5,6 +5,8 @@ let cellPerRow;
 
 playButton.addEventListener('click', function() {
 
+    document.getElementById('click-text').style.display = "none";
+
     let difficulty = document.getElementById('difficulty-level').value;
 
     if (difficulty == '1') {

@@ -45,11 +45,18 @@ main {
 main #container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 
     max-width: 400px;   
     height: calc(100vh - 25vh); 
     margin: auto;
     padding: 2em 0;
+}
+
+main #container #click-text {
+    font-size: 2em;
+    font-weight: 400;
 }
 
 main #container .square {
