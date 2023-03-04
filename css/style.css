@@ -32,7 +32,10 @@ nav #nav-left img {
     height: 80%;
 }
 
-nav #play-button {
+nav .buttons {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
     padding: .1em 1em;
 }
 /* /nav */
